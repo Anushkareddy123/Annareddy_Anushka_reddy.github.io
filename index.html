@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Annareddy Anushka Reddy | Portfolio</title>
+<style>
+/* --- Global Styles --- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d0d0d;
+  color: #eee;
+  scroll-behavior: smooth;
+}
+a { color: #1abc9c; text-decoration: none; }
+a:hover { color: #42e695; }
+
+/* --- Header --- */
+header {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #0d0d0d;
+}
+.neon-text {
+  font-size: 3em;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5, #42e695);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 5px hsl(200, 100%, 72%), 0 0 10px #7873f5, 0 0 20px #42e695;
+  animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+  0% { text-shadow: 0 0 5px lch(70.84% 38.88 201.45),0 0 10px #7873f5,0 0 20px #42e695; }
+  50% { text-shadow: 0 0 10px lab(81.36% -29.29 -20.32),0 0 20px #7873f5,0 0 30px #42e695; }
+  100% { text-shadow: 0 0 15px hsl(188, 96%, 69%),0 0 25px #7873f5,0 0 40px #42e695; }
+}
+header p { margin-top: 15px; font-size: 1.2em; color: #ccc; text-shadow: 0 0 5px #000; }
+
+/* --- Navigation --- */
+nav {
+  background-color: #111;
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+nav a {
+  margin: 0 15px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+nav a:hover {
+  background: #1abc9c;
+  color: #0d0d0d;
+  box-shadow: 0 0 10px #1abc9c, 0 0 20px #42e695;
+}
+
+/* --- Sections --- */
+section { max-width: 1000px; margin: 60px auto; padding: 0 20px; }
+section h2 {
+  text-align: center;
+  color: #1abc9c;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 4px #000;
+}
+
+/* --- Cards --- */
+.card {
+  background-color: #1a1a1a;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(26, 188, 156, 0.3);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 0 25px #1abc9c, 0 0 50px #42e695;
+}
+
+/* --- Skills --- */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.skills span {
+  background: #1abc9c;
+  color: #0d0d0d;
+  padding: 7px 15px;
+  border-radius: 25px;
+  font-weight: bold;
+  box-shadow: 0 0 10px #1abc9c;
+  transition: 0.3s;
+}
+.skills span:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #42e695;
+}
+
+/* --- Timeline --- */
+.timeline { border-left: 3px solid #1abc9c; padding-left: 20px; margin-left: 10px; }
+.timeline-item { margin-bottom: 25px; position: relative; }
+.timeline-item::before {
+  content:'';
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  background: #1abc9c;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #1abc9c;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #111;
+  color: #eee;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.5);
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1 class="neon-text">Annareddy Anushka Reddy</h1>
+  <p>CS Student| AI/ML | Blockchain Developer</p>
+</header>
+
+<nav>
+  <a href="#about">About Me</a>
+  <a href="#expertise">Expertise</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>Passionate about leveraging cutting-edge technology to solve real-world problems.</p>
+    <p>I'm Annareddy Anushka Reddy, a dedicated Cs Student intrested in AI/ML , blockchain technology, and secure system development.</p>
+    <p>I have worked as a Research Intern at CSIR-IICT in the Chemical Department, applying AI/ML technologies to support groundbreaking research.</p>
+  </div>
+</section>
+
+<section id="expertise">
+  <h2>AI/ML & Development Expertise</h2>
+  <div class="card">
+    <h3>AI/ML Expertise</h3>
+    <p>Advanced machine learning algorithms and data processing techniques</p>
+    <h3>Data Science</h3>
+    <p>Extracting meaningful insights from complex datasets</p>
+    <h3>Blockchain Development</h3>
+    <p>Secure decentralized systems and smart contracts</p>
+    <h3>Full-Stack Development</h3>
+    <p>End-to-end application development and deployment</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Featured Projects</h2>
+  <div class="card">
+    <h3>Crime Rate Prediction Against Women in India</h3>
+    <p>Built a comprehensive ML model to predict crime hotspots with 85%+ accuracy.</p>
+    <p><b>Technologies:</b> Python, scikit-learn, Data Analysis, Predictive Modeling</p>
+  </div>
+  <div class="card">
+    <h3>Blockchain-Based Secure File Storage</h3>
+    <p>Developed a decentralized file storage platform with smart contracts and IPFS.</p>
+    <p><b>Technologies:</b> Solidity, Ethereum, IPFS, Web3, Cryptography</p>
+  </div>
+  <div class="card">
+    <h3>Digital Voting System Using Blockchain</h3>
+    <p>Created a tamper-proof digital voting platform ensuring election integrity and privacy.</p>
+    <p><b>Technologies:</b> Solidity, Ethereum, Smart Contracts, Web3</p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience & Growth</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Research Intern, CSIR-IICT (Jan 2025 – Jun 2025)</h3>
+      <p>Developed ML models for chemical data analysis, AI algorithms for research optimization, and contributed to scientific publications.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Salesforce Developer Intern, Virtual Internship (Jan 2024)</h3>
+      <p>Developed Salesforce applications, implemented data migration, and automated business processes using Apex and Lightning.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Core Competencies & Skills</h2>
+  <div class="skills">
+    <span>Machine Learning</span><span>Data Science</span><span>Python</span><span>Java</span><span>C</span>
+    <span>Blockchain</span><span>Solidity</span><span>Ethereum</span><span>IPFS</span><span>SQL</span>
+    <span>DBMS</span><span>Salesforce</span><span>JavaScript</span><span>HTML/CSS</span><span>Git</span>
+    <span>scikit-learn</span><span>Predictive Analytics</span><span>Research & Development</span>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Let's Connect</h2>
+  <div class="card">
+    <p><b>Email:</b> <a href="mailto:anushkareddy035@gmail.com">anushkareddy035@gmail.com</a></p>
+    <p><b>LinkedIn:</b> <a href="https://linkedin.com/in/anushka-reddy-33843024a" target="_blank">linkedin.com/in/anushka-reddy-33843024a</a></p>
+    <p><b>GitHub:</b> <a
